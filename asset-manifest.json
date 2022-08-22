@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/saexy-bank/static/css/main.d5bb7b14.css",
+    "main.js": "/saexy-bank/static/js/main.2b12e6a9.js",
+    "static/media/back-login.webp": "/saexy-bank/static/media/back-login.0e032ad962c786f0e0ec.webp",
+    "static/media/aproximacao_black.png": "/saexy-bank/static/media/aproximacao_black.1682224deb6f14f01d77.png",
+    "static/media/aproximacao_white.png": "/saexy-bank/static/media/aproximacao_white.986600a749c55e4e05d7.png",
+    "static/media/transfer_money.svg": "/saexy-bank/static/media/transfer_money.0cec602af19073a060b67eac96269254.svg",
+    "index.html": "/saexy-bank/index.html",
+    "main.d5bb7b14.css.map": "/saexy-bank/static/css/main.d5bb7b14.css.map",
+    "main.2b12e6a9.js.map": "/saexy-bank/static/js/main.2b12e6a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5bb7b14.css",
+    "static/js/main.2b12e6a9.js"
+  ]
+}
