@@ -1,0 +1,43 @@
+.inputgroup{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputgroup .label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.inputgroup .text{
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.inputgroup.light .label{
+    color: white;
+}
+
+.inputgroup.light .text{
+    border: 1px solid white;
+    color: white;
+}
+
+.inputgroup.light .text::placeholder{
+    color: white;
+}
+
+.inputgroup.dark .label{
+    color: black;
+}
+
+.inputgroup.dark .text{
+    border: 1px solid black;
+    color: black;
+}
+
+.inputgroup.dark .text::placeholder{
+    color: black;
+}

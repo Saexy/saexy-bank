@@ -1,0 +1,293 @@
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardselection{
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.cardselection .preview{
+    width: 40%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardselection .preview .front,.cardselection .preview .back{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardselection .preview .back{
+    padding: 0px;
+}
+
+.cardselection .preview .front .name{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cardselection .preview .front .chip{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.cardselection .preview .front .chip .chipblock{
+    width: 75px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(201, 171, 0);
+}
+
+.cardselection .preview .front .chip img{
+    width: 50px;
+}
+
+.cardselection .preview .front .cardnumber{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.cardselection .preview .front .cardname,.cardselection .preview .front .carddate{
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.cardselection .preview .back .stripe{
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+}
+
+/* GOLD CARD STYLE  */
+.cardselection .preview.gold .front,.cardselection .preview.gold .back{
+    background-color: rgb(0, 0, 82);
+}
+
+.cardselection .preview.gold .front .name,.cardselection .preview.gold .front .cardnumber,.cardselection .preview.gold .front .cardname,.cardselection .preview.gold .front .carddate{
+    color: white;
+}
+
+.cardselection .preview.gold .back .stripe{
+    background-color: rgb(109, 109, 109);
+}
+
+/* PLATINUM CARD STYLE  */
+.cardselection .preview.platinum .front,.cardselection .preview.platinum .back{
+    background-color: rgb(184, 184, 184);
+}
+
+.cardselection .preview.platinum .front .name,.cardselection .preview.platinum .front .cardnumber,.cardselection .preview.platinum .front .cardname,.cardselection .preview.platinum .front .carddate{
+    color: black;
+}
+
+.cardselection .preview.platinum .back .stripe{
+    background-color: black;
+}
+
+/* BLACK CARD STYLE  */
+.cardselection .preview.black .front,.cardselection .preview.black .back{
+    background-color: rgb(5, 5, 5);
+}
+
+.cardselection .preview.black .front .name,.cardselection .preview.black .front .cardnumber,.cardselection .preview.black .front .cardname,.cardselection .preview.black .front .carddate{
+    color: white;
+}
+
+.cardselection .preview.black .back .stripe{
+    background-color: rgb(109, 109, 109);
+}
+
+.cardselection .data{
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardselection .data .title{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.cardselection .cards{
+    width: 65%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardselection .cards .card{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardselection .cards .card .name{
+    font-size: 20px;
+}
+
+.cardselection .cards .card .block{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cardselection .cards .card.gold .name{
+    color: rgb(0, 0, 82);
+}
+
+.cardselection .cards .card.gold .block{
+    background-color: rgb(0, 0, 82);
+}
+
+.cardselection .cards .card.platinum .name{
+    color: rgb(102, 102, 102);
+}
+
+.cardselection .cards .card.platinum .block{
+    background-color: rgb(102, 102, 102);
+}
+
+.cardselection .cards .card.black .name{
+    color: rgb(5, 5, 5);
+}
+
+.cardselection .cards .card.black .block{
+    background-color: rgb(5, 5, 5);
+}
+
+@media (max-width: 768px){
+    .cardselection{
+        height: 800px;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    
+    .cardselection .preview{
+        width: 300px;
+    }
+
+    .cardselection .preview .front,.cardselection .preview .back{
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+    }
+    
+    .cardselection .preview .front .name{
+        font-size: 15px;
+    }
+    
+    .cardselection .preview .front .chip{
+        margin-top: 10px;
+    }
+    
+    .cardselection .preview .front .chip .chipblock{
+        width: 35px;
+        height: 20px;
+        border-radius: 5px;
+    }
+    
+    .cardselection .preview .front .chip img{
+        width: 20px;
+    }
+    
+    .cardselection .preview .front .cardnumber{
+        font-size: 15px;
+    }
+    
+    .cardselection .preview .front .cardname,.cardselection .preview .front .carddate{
+        font-size: 8px;
+    }
+    
+    .cardselection .preview .back .stripe{
+        height: 30px;
+    }
+
+    .cardselection .data{
+        margin-top: 20px;
+        width: 90%;
+        height: 400px;
+    }
+    
+    .cardselection .data .title{
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .cardselection .cards{
+        width: 100%;
+        height: 60px;
+    }
+    
+    .cardselection .cards .card{
+        width: 30%;
+    }
+    
+    .cardselection .cards .card .block{
+        width: 70px;
+        height: 35px;
+    }
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 63);
+    padding: 20px;
+}
+
+.about .title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about .row{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about .row img{
+    width: 400px;
+}
+
+.about .row .texts{
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
