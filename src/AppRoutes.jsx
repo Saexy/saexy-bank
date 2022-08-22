@@ -5,7 +5,7 @@ import Login from "./pages/Login"
 
 const AppRoutes = () => {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path='' exact element={<Home />} />
                 <Route path='/login' exact element={<Login />} />
